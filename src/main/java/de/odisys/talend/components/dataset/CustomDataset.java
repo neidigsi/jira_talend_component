@@ -17,6 +17,9 @@ import org.talend.sdk.component.api.meta.Documentation;
         @GridLayout.Row({"projectId"}),
         @GridLayout.Row({"status"})
 })
+@GridLayout(names = GridLayout.FormType.ADVANCED, value = {
+        @GridLayout.Row({ "jql" })
+})
 @Documentation("")
 public class CustomDataset implements Serializable {
     @Option
@@ -32,6 +35,10 @@ public class CustomDataset implements Serializable {
     @Proposable("valuesProvider")
     @Documentation("")
     private String status;
+
+    @Option
+    @Documentation("")
+    private String jql;
 
     public CustomDataset(CustomDatastore datastore, String projectId, String status) {
         this.datastore = datastore;
@@ -52,6 +59,14 @@ public class CustomDataset implements Serializable {
 
     public String getStatus() {
         return status;
+    }
+
+    public String getJql() {
+        return jql;
+    }
+
+    public void setJql(String jql) {
+        this.jql = jql;
     }
 
     public void setStatus(String status) {

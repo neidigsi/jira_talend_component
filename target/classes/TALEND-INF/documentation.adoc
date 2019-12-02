@@ -17,6 +17,7 @@
 |Base URL||-|Always enabled|configuration.dataset.datastore.baseurl|datastore
 |Password||-|Always enabled|configuration.dataset.datastore.password|datastore
 |Username||-|Always enabled|configuration.dataset.datastore.username|datastore
+|JQL||-|Always enabled|configuration.dataset.jql|dataset
 |Project Id||-|Always enabled|configuration.dataset.projectId|dataset
 |Status||-|Always enabled|configuration.dataset.status|dataset
 |===
@@ -44,6 +45,7 @@ TODO fill the documentation for this processor
 |Base URL||-|Always enabled|configuration.dataset.datastore.baseurl|datastore
 |Password||-|Always enabled|configuration.dataset.datastore.password|datastore
 |Username||-|Always enabled|configuration.dataset.datastore.username|datastore
+|JQL||-|Always enabled|configuration.dataset.jql|dataset
 |Project Id||-|Always enabled|configuration.dataset.projectId|dataset
 |Status||-|Always enabled|configuration.dataset.status|dataset
 |===
