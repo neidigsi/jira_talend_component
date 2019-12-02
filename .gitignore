@@ -2,3 +2,11 @@
 target/test-classes/config.properties
 
 src/main/resources/config.properties
+
+src/test/resources/config.properties
+
+src/.DS_Store
+
+.idea/
+
+target/
