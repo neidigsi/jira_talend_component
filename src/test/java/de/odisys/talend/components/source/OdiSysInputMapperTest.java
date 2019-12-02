@@ -25,13 +25,13 @@ public class OdiSysInputMapperTest {
     private String username;
     private String password;
     private String projectId;
-
+    private String status;
 
     @ClassRule
     public static final SimpleComponentRule COMPONENT_FACTORY = new SimpleComponentRule("de.odisys.talend.components");
 
-    @Test
-    public void produce() throws IOException {
+    @Before
+    public void before() {
         InputStream inputStream;
         try {
             Properties prop = new Properties();
@@ -41,23 +41,24 @@ public class OdiSysInputMapperTest {
 
             if (inputStream != null) {
                 prop.load(inputStream);
-            } else {
-                throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
             }
 
             baseUrl = prop.getProperty("BASEURL");
             username = prop.getProperty("USER");
             password = prop.getProperty("PASSWORD");
             projectId = prop.getProperty("PROJECTID");
+            status = prop.getProperty("STATUS");
 
             inputStream.close();
         } catch (Exception e) {
-            System.out.println("Exception: " + e);
         }
+    }
 
+    @Test
+    public void produce() {
         CustomDatastore datastore = new CustomDatastore(baseUrl, username, password);
 
-        final CustomDataset dataset = new CustomDataset(datastore, projectId);
+        final CustomDataset dataset = new CustomDataset(datastore, projectId, status);
 
         final OdiSysInputMapperConfiguration configuration = new OdiSysInputMapperConfiguration();
         configuration.setDataset(dataset);
@@ -80,8 +81,8 @@ public class OdiSysInputMapperTest {
 
         final List<Record> result = COMPONENT_FACTORY.collectAsList(Record.class, mapper);
         ReadContext json = JsonPath.parse(result.get(0).getString("data"));
-        List<String> issues = json.read("issues");
+        List<String> issues = json.json();
 
-        assertEquals(14, issues.size());
+        assertEquals(2, issues.size());
     }
 }

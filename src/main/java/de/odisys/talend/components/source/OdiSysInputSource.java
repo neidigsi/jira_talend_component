@@ -2,6 +2,7 @@ package de.odisys.talend.components.source;
 
 import java.io.Serializable;
 
+import com.jayway.jsonpath.JsonPath;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
@@ -46,8 +47,18 @@ public class OdiSysInputSource implements Serializable {
             }
             executed = true;
 
+            resString = filterStatus(resString);
+
             return builderFactory.newRecordBuilder().withString("data", resString).build();
         }
         return null;
+    }
+
+    public String filterStatus(String resString) {
+        if (configuration.getDataset().getStatus().equals("All")){
+            return resString;
+        } else {
+            return JsonPath.read(resString, "$.issues[?(@.fields.status.statusCategory.name =~ /.*" + configuration.getDataset().getStatus() + "/i)]").toString();
+        }
     }
 }
