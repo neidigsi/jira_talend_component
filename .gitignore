@@ -1,12 +1,9 @@
-
 target/test-classes/config.properties
-
 src/main/resources/config.properties
-
 src/test/resources/config.properties
-
 target/classes/config.properties
-
 target/
-
 .DS_Store
+*.iml
+*.iws
+.idea
