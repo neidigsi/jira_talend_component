@@ -20,14 +20,14 @@ import de.odisys.talend.components.service.OdiSysService;
 
 @Version(1) // default version is 1, if some configuration changes happen between 2 versions you can add a migrationHandler
 @Icon(Icon.IconType.STAR) // you can use a custom one using @Icon(value=CUSTOM, custom="filename") and adding icons/filename.svg in resources
-@Processor(name = "JiraOutput")
+@Processor(name = "OdiSysOutput")
 @Documentation("TODO fill the documentation for this processor")
-public class JiraOutputOutput implements Serializable {
-    private final JiraOutputOutputConfiguration configuration;
+public class OdiSysOutput implements Serializable {
+    private final OdiSysOutputConfiguration configuration;
     private final OdiSysService service;
 
-    public JiraOutputOutput(@Option("configuration") final JiraOutputOutputConfiguration configuration,
-                          final OdiSysService service) {
+    public OdiSysOutput(@Option("configuration") final OdiSysOutputConfiguration configuration,
+                        final OdiSysService service) {
         this.configuration = configuration;
         this.service = service;
     }
