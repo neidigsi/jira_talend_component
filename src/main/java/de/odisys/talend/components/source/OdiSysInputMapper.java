@@ -19,8 +19,8 @@ import org.talend.sdk.component.api.service.record.RecordBuilderFactory;
 import de.odisys.talend.components.service.OdiSysService;
 
 @Version(1)
-@Icon(value= Icon.IconType.STAR)
-@PartitionMapper(name = "OdiSysInput")
+@Icon(value = Icon.IconType.CUSTOM, custom = "OdiSysFamily")
+@PartitionMapper(name = "Input")
 @Documentation("")
 public class OdiSysInputMapper implements Serializable {
     private final OdiSysInputMapperConfiguration configuration;

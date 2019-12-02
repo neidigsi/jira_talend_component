@@ -1,9 +1,6 @@
 package de.odisys.talend.components.source;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
@@ -71,10 +68,10 @@ public class OdiSysInputMapperTest {
         final Mapper mapper = COMPONENT_FACTORY.createMapper(OdiSysInputMapper.class, configuration);
 
         Job.components()
-                .component("OdiSysInput", "OdiSysFamily://OdiSysInput?" + uriConfig)
+                .component("Input", "OdiSysFamily://Input?" + uriConfig)
                 .component("collector", "test://collector")
                 .connections()
-                .from("OdiSysInput").to("collector")
+                .from("Input").to("collector")
                 .build()
                 .run();
 
