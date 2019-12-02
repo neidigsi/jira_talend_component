@@ -32,24 +32,43 @@ public class OdiSysInputSource implements Serializable {
     public Record next() {
         if (!executed) {
             String resString = "";
-            try {
-                HttpResponse<String> res = Unirest.get(
-                        configuration.getDataset().getDatastore().getUrl()
-                                + "/rest/api/2/search?jql=project="
-                                + configuration.getDataset().getProjectId())
-                        .basicAuth(configuration.getDataset().getDatastore().getUsername(),
-                                configuration.getDataset().getDatastore().getPassword())
-                        .asString();
-                ;
-                resString = res.getBody();
-            } catch (UnirestException e) {
-                e.printStackTrace();
+            if (configuration.getDataset().getJql() == null) {
+                try {
+                    HttpResponse<String> res = Unirest.get(
+                            configuration.getDataset().getDatastore().getUrl()
+                                    + "/rest/api/2/search?jql=project="
+                                    + configuration.getDataset().getProjectId())
+                            .basicAuth(configuration.getDataset().getDatastore().getUsername(),
+                                    configuration.getDataset().getDatastore().getPassword())
+                            .asString();
+                    ;
+                    resString = res.getBody();
+                } catch (UnirestException e) {
+                    e.printStackTrace();
+                }
+                executed = true;
+
+                resString = filterStatus(resString);
+
+                return builderFactory.newRecordBuilder().withString("data", resString).build();
+            } else {
+                try {
+                    HttpResponse<String> res = Unirest.get(
+                            configuration.getDataset().getDatastore().getUrl()
+                                    + "/rest/api/2/search?jql="
+                                    + configuration.getDataset().getJql())
+                            .basicAuth(configuration.getDataset().getDatastore().getUsername(),
+                                    configuration.getDataset().getDatastore().getPassword())
+                            .asString();
+                    ;
+                    resString = res.getBody();
+                } catch (UnirestException e) {
+                    e.printStackTrace();
+                }
+                executed = true;
+
+                return builderFactory.newRecordBuilder().withString("data", resString).build();
             }
-            executed = true;
-
-            resString = filterStatus(resString);
-
-            return builderFactory.newRecordBuilder().withString("data", resString).build();
         }
         return null;
     }

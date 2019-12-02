@@ -39,46 +39,22 @@ public class CustomDataset implements Serializable {
     @Option
     @TextArea
     @Documentation("")
-    private String jql;
+    private String jql = null;
 
-    public CustomDataset(CustomDatastore datastore, String projectId, String status) {
+    public CustomDataset(CustomDatastore datastore, String projectId, String status, String jql) {
         this.datastore = datastore;
         this.projectId = projectId;
         this.status = status;
-    }
-
-    public CustomDataset() {
-    }
-
-    public CustomDatastore getDatastore() {
-        return datastore;
-    }
-
-    public String getProjectId() {
-        return projectId;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public String getJql() {
-        return jql;
-    }
-
-    public void setJql(String jql) {
         this.jql = jql;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public void setDatastore(CustomDatastore datastore) {
-        this.datastore = datastore;
-    }
-
-    public void setProjectId(String projectId) {
-        this.projectId = projectId;
-    }
+    public CustomDataset() { }
+    public CustomDatastore getDatastore() { return datastore; }
+    public String getProjectId() { return projectId; }
+    public String getStatus() { return status; }
+    public String getJql() { return jql; }
+    public void setJql(String jql) { this.jql = jql; }
+    public void setStatus(String status) { this.status = status; }
+    public void setDatastore(CustomDatastore datastore) { this.datastore = datastore; }
+    public void setProjectId(String projectId) { this.projectId = projectId; }
 }
