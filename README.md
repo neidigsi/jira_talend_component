@@ -1,1 +1,1 @@
-jira_talend_component
+talend_jira_component
