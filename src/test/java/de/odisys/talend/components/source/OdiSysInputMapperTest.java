@@ -1,7 +1,9 @@
 package de.odisys.talend.components.source;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
+import java.util.Properties;
 
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.ReadContext;
@@ -17,15 +19,44 @@ import org.talend.sdk.component.runtime.manager.chain.Job;
 import static org.junit.Assert.*;
 
 public class OdiSysInputMapperTest {
+    private String baseUrl;
+    private String username;
+    private String password;
+    private String projectId;
+    private String status;
 
     @ClassRule
     public static final SimpleComponentRule COMPONENT_FACTORY = new SimpleComponentRule("de.odisys.talend.components");
 
-    @Test
-    public void produce() throws IOException {
-        CustomDatastore datastore = new CustomDatastore("url", "username", "password");
+    @Before
+    public void before() {
+        InputStream inputStream;
+        try {
+            Properties prop = new Properties();
+            String propFileName = "config.properties";
 
-        final CustomDataset dataset = new CustomDataset(datastore, "projectId");
+            inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+
+            if (inputStream != null) {
+                prop.load(inputStream);
+            }
+
+            baseUrl = prop.getProperty("BASEURL");
+            username = prop.getProperty("USER");
+            password = prop.getProperty("PASSWORD");
+            projectId = prop.getProperty("PROJECTID");
+            status = prop.getProperty("STATUS");
+
+            inputStream.close();
+        } catch (Exception e) {
+        }
+    }
+
+    @Test
+    public void produce() {
+        CustomDatastore datastore = new CustomDatastore(baseUrl, username, password);
+
+        final CustomDataset dataset = new CustomDataset(datastore, projectId);
 
         final OdiSysInputMapperConfiguration configuration = new OdiSysInputMapperConfiguration();
         configuration.setDataset(dataset);
