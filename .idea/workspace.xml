@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa52f5f8-5483-4cbe-821c-e81c4d8af114" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1UPzoV25TYljN33xgSfzAHIOgiI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Shell Script.TOSDI Build">
+    <configuration name="Maven Clean Install" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="clean install" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TOSDI Build" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="talend-component:deploy-in-studio -Dtalend.component.studioHome=&quot;/Applications/TOSDI-7.1.1/studio&quot;" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Shell Script.TOSDI Build" />
+      <item itemvalue="Shell Script.Maven Clean Install" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa52f5f8-5483-4cbe-821c-e81c4d8af114" name="Default Changelist" comment="" />
+      <created>1575273192996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575273192996</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2960" y="-907" width="1280" height="1364" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575273391195">
+      <screen x="1680" y="-907" width="2560" height="1365" />
+    </state>
+    <state x="2960" y="-907" width="1280" height="1364" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-907.2560.1365/0.23.1680.1027@1680.-907.2560.1365" timestamp="1575273391195" />
+  </component>
+</project>
