@@ -1,9 +1,0 @@
-de/odisys/talend/components/output/OdiSysOutputConfiguration.class
-de/odisys/talend/components/source/OdiSysInputSource.class
-de/odisys/talend/components/service/OdiSysService.class
-de/odisys/talend/components/dataset/CustomDataset.class
-de/odisys/talend/components/source/OdiSysInputMapperConfiguration.class
-de/odisys/talend/components/package-info.class
-de/odisys/talend/components/source/OdiSysInputMapper.class
-de/odisys/talend/components/output/OdiSysOutput.class
-de/odisys/talend/components/datastore/CustomDatastore.class
