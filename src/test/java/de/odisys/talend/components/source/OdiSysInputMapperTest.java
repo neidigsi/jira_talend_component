@@ -55,7 +55,7 @@ public class OdiSysInputMapperTest {
     public void produce() {
         CustomDatastore datastore = new CustomDatastore(baseUrl, username, password);
 
-        final CustomDataset dataset = new CustomDataset(datastore, projectId, status);
+        final CustomDataset dataset = new CustomDataset(datastore, projectId, status, null);
 
         final OdiSysInputMapperConfiguration configuration = new OdiSysInputMapperConfiguration();
         configuration.setDataset(dataset);

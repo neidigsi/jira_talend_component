@@ -32,31 +32,36 @@ public class OdiSysInputSource implements Serializable {
     public Record next() {
         if (!executed) {
             String resString = "";
+            boolean filter;
+            String requestUrl = configuration.getDataset().getDatastore().getUrl() + "/rest/api/2/search?jql=";
+            if (configuration.getDataset().getJql() == null) {
+                requestUrl += "project=" + configuration.getDataset().getProjectId();
+                filter = true;
+            } else {
+                requestUrl += configuration.getDataset().getJql();
+                filter = false;
+            }
             try {
-                HttpResponse<String> res = Unirest.get(
-                        configuration.getDataset().getDatastore().getUrl()
-                                + "/rest/api/2/search?jql=project="
-                                + configuration.getDataset().getProjectId())
+                HttpResponse<String> res = Unirest.get(requestUrl)
                         .basicAuth(configuration.getDataset().getDatastore().getUsername(),
                                 configuration.getDataset().getDatastore().getPassword())
                         .asString();
-                ;
                 resString = res.getBody();
             } catch (UnirestException e) {
                 e.printStackTrace();
             }
             executed = true;
 
-            resString = filterStatus(resString);
+            resString = filterStatus(resString, filter);
 
             return builderFactory.newRecordBuilder().withString("data", resString).build();
         }
         return null;
     }
 
-    public String filterStatus(String resString) {
-        if (configuration.getDataset().getStatus().equals("All")){
-            return resString;
+    public String filterStatus(String resString, boolean filter) {
+        if (!filter || configuration.getDataset().getStatus().equals("All")){
+            return JsonPath.read(resString, "$.issues[*]").toString();
         } else {
             return JsonPath.read(resString, "$.issues[?(@.fields.status.statusCategory.name =~ /.*" + configuration.getDataset().getStatus() + "/i)]").toString();
         }
