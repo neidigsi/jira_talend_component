@@ -1,6 +1,6 @@
-//component_start:JiraInput
+//component_start:Input
 
-== JiraInput
+== Input
 
 
 
@@ -11,22 +11,23 @@
 [cols="d,d,m,a,e,d",options="header"]
 |===
 |Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
-|configuration||-|Always enabled|configuration|dataset
-|datastore||-|Always enabled|configuration.datastore|datastore
-|Base URL||-|Always enabled|configuration.datastore.baseurl|datastore
-|Password||-|Always enabled|configuration.datastore.password|datastore
-|Username||-|Always enabled|configuration.datastore.username|datastore
-|Project ID||-|Always enabled|configuration.projectId|dataset
-|Status||-|Always enabled|configuration.status|dataset
+|configuration||-|Always enabled|configuration|-
+|dataset||-|Always enabled|configuration.dataset|dataset
+|Datastore||-|Always enabled|configuration.dataset.datastore|datastore
+|Base URL||-|Always enabled|configuration.dataset.datastore.baseurl|datastore
+|Password||-|Always enabled|configuration.dataset.datastore.password|datastore
+|Username||-|Always enabled|configuration.dataset.datastore.username|datastore
+|Project Id||-|Always enabled|configuration.dataset.projectId|dataset
+|Status||-|Always enabled|configuration.dataset.status|dataset
 |===
 
 //configuration_end
 
-//component_end:JiraInput
+//component_end:Input
 
-//component_start:JiraOutput
+//component_start:OdiSysOutput
 
-== JiraOutput
+== OdiSysOutput
 
 TODO fill the documentation for this processor
 
@@ -39,15 +40,15 @@ TODO fill the documentation for this processor
 |Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
 |configuration|TODO fill the documentation for this configuration|-|Always enabled|configuration|-
 |dataset|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset|dataset
-|datastore||-|Always enabled|configuration.dataset.datastore|datastore
+|Datastore||-|Always enabled|configuration.dataset.datastore|datastore
 |Base URL||-|Always enabled|configuration.dataset.datastore.baseurl|datastore
 |Password||-|Always enabled|configuration.dataset.datastore.password|datastore
 |Username||-|Always enabled|configuration.dataset.datastore.username|datastore
-|Project ID||-|Always enabled|configuration.dataset.projectId|dataset
+|Project Id||-|Always enabled|configuration.dataset.projectId|dataset
 |Status||-|Always enabled|configuration.dataset.status|dataset
 |===
 
 //configuration_end
 
-//component_end:JiraOutput
+//component_end:OdiSysOutput
 

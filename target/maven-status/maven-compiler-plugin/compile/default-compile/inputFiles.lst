@@ -1,8 +1,9 @@
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/package-info.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/output/JiraOutputOutputConfiguration.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/service/OdiSysService.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/datastore/BasicAuth.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/source/JiraInputSource.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/source/JiraInputMapper.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/dataset/SearchQuery.java
-/Users/neidig/Documents/Talend Component Kit/talend_jira_component/src/main/java/de/odisys/talend/components/output/JiraOutputOutput.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/datastore/CustomDatastore.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/source/OdiSysInputMapper.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/package-info.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/service/OdiSysService.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/source/OdiSysInputMapperConfiguration.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/output/OdiSysOutput.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/dataset/CustomDataset.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/output/OdiSysOutputConfiguration.java
+/Users/neidig/Documents/Talend Component Kit/jira_talend_component/src/main/java/de/odisys/talend/components/source/OdiSysInputSource.java

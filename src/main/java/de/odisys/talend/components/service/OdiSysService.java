@@ -8,7 +8,6 @@ import static java.util.Arrays.asList;
 
 @Service
 public class OdiSysService {
-
     @DynamicValues("valuesProvider")
     public Values vendors() {
         return new Values(asList(new Values.Item("1", "All"),
