@@ -18,7 +18,7 @@ import org.talend.sdk.component.api.meta.Documentation;
         @GridLayout.Row({"status"})
 })
 @GridLayout(names = GridLayout.FormType.ADVANCED, value = {
-        @GridLayout.Row({ "jql" })
+        @GridLayout.Row({"jql"})
 })
 @Documentation("")
 public class CustomDataset implements Serializable {
@@ -37,6 +37,7 @@ public class CustomDataset implements Serializable {
     private String status;
 
     @Option
+    @TextArea
     @Documentation("")
     private String jql;
 

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa52f5f8-5483-4cbe-821c-e81c4d8af114" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/odisys/talend/components/dataset/CustomDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/odisys/talend/components/dataset/CustomDataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/odisys/talend/components/source/OdiSysInputMapperConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/odisys/talend/components/source/OdiSysInputMapperConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OdiSys-0.0.1-SNAPSHOT.car" beforeDir="false" afterPath="$PROJECT_DIR$/target/OdiSys-0.0.1-SNAPSHOT.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OdiSys-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/OdiSys-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TALEND-INF/scanning.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TALEND-INF/scanning.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/odisys/talend/components/source/OdiSysInputMapperConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/odisys/talend/components/source/OdiSysInputMapperConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.odisys.talend.components.source.OdiSysInputMapperTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.odisys.talend.components.source.OdiSysInputMapperTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.odisys.talend.components.source.OdiSysInputMapperTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.odisys.talend.components.source.OdiSysInputMapperTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

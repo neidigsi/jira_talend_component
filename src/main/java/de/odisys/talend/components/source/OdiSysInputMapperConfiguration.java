@@ -12,6 +12,9 @@ import org.talend.sdk.component.api.meta.Documentation;
 @GridLayout({
         @GridLayout.Row({"dataset"})
 })
+@GridLayout(names = GridLayout.FormType.ADVANCED, value = {
+        @GridLayout.Row({"dataset"})
+})
 @Documentation("")
 public class OdiSysInputMapperConfiguration implements Serializable {
     @Option
