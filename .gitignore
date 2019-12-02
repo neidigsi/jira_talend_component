@@ -1,0 +1,4 @@
+
+target/test-classes/config.properties
+
+src/main/resources/config.properties

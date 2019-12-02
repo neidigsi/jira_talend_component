@@ -1,0 +1,8 @@
+de/odisys/talend/components/service/OdiSysService.class
+de/odisys/talend/components/source/JiraInputMapper.class
+de/odisys/talend/components/output/JiraOutputOutput.class
+de/odisys/talend/components/source/JiraInputSource.class
+de/odisys/talend/components/dataset/SearchQuery.class
+de/odisys/talend/components/output/JiraOutputOutputConfiguration.class
+de/odisys/talend/components/datastore/BasicAuth.class
+de/odisys/talend/components/package-info.class
