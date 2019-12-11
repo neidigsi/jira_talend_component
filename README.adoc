@@ -1,5 +1,0 @@
-= Jira Components for Talend Open Studio for Data Integration
-== A custom Component with Talend Component Kit
-
-This is the source code to the Tutorial of Talend Component Kit, hosted on the Company Website of OdiSys GmbH.
-Feel free to edit or fork the repository!
