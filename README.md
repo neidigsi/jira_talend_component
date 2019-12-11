@@ -16,7 +16,7 @@ Short overview over the topics of the single tutorial parts:
 
 - [Tutorial - Talend Component Kit \#3: Building an Input Component (Dataset, Datastore, Partition Mapper & Source)](https://github.com/neidigsi/jira_talend_component/wiki/Tutorial---Talend-Component-Kit-3:-Building-an-Input-Component-(Dataset,-Datastore,-Partition-Mapper-&-Source))
 
-- [Tutorial - Talend Component Kit \#4: Implementation of the Dataset and -store of a Jira-Input)](https://github.com/neidigsi/jira_talend_component/wiki/Tutorial---Talend-Component-Kit-4:-Implementation-of-the-Dataset-and--store-of-a-Jira-Input))
+- [Tutorial - Talend Component Kit \#4: Implementation of the Dataset and -store of a Jira-Input)](https://github.com/neidigsi/jira_talend_component/wiki/Tutorial---Talend-Component-Kit-4:-Implementation-of-the-Dataset-and--store-of-a-Jira-Input)
 
 - [Tutorial - Talend Component Kit \#5: Implementation of the Partition Mapper and the Source of a Jira Input](https://github.com/neidigsi/jira_talend_component/wiki/Tutorial---Talend-Component-Kit-5:-Implementation-of-the-Partition-Mapper-and-the-Source-of-a-Jira-Input)
 
